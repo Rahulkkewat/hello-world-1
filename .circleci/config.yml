@@ -11,7 +11,7 @@ jobs:
       - run: echo "A first hello"s
       - run: sleep 25
   two:
-     docker:
+    docker:
        - image: cimag/ruby:3.0.2
          auth:
            username: kaif3120
