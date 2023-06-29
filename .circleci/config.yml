@@ -1,21 +1,21 @@
 version: 2
 jobs:
   one:
-    docker:
-      - image: cimg/ruby:2.6.8
-        auth:
-          username: kaif3120
-          password: $DOC_PASS
+    #docker:
+      #- image: cimg/ruby:2.6.8
+        #auth:
+          #username: kaif3120
+          #password: $DOC_PASS
     steps:
       - checkout
       - run: echo "A first hello"s
       - run: sleep 25
   two:
-    docker:
-       - image: cimag/ruby:3.0.2
-         auth:
-           username: kaif3120
-           password: $DOC_PASS
+    #docker:
+       #- image: cimag/ruby:3.0.2
+         #auth:
+           #username: kaif3120
+           #password: $DOC_PASS
       steps:
        - checkout
        - run: echo "A more familiar Hi"
